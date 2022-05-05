@@ -18,6 +18,7 @@ public class AreaCalculator {
         return sum;
     }
 
+    //added new class
 //    public String json(List<Object> shapes;) {
 //        return "{sum: %s}".formatted(sum(shapes));
 //    }
