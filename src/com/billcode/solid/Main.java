@@ -10,7 +10,12 @@ public class Main {
         Cube cube = new Cube();
         Rectangle rectangle = new Rectangle();
         ShapesPrinter printer = new ShapesPrinter();
-        List<Shape> shapes = List.of(circle, square, cube, rectangle);
+        NoShape noShape = new NoShape();
+        List<Shape> shapes = List.of(
+                circle,
+                square,
+                cube,
+                rectangle);
         int sum = areaCalculator.sum(shapes);
         System.out.println(printer.json(sum));
         System.out.println(printer.csc(sum));
