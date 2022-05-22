@@ -1,6 +1,6 @@
 package com.billcode.solid;
 
-public class Circle implements Shape{
+public class Circle implements Shape, ThreeDimensionalShape{
     private final int radius;
 
     public Circle(int radius) {
@@ -14,5 +14,10 @@ public class Circle implements Shape{
     @Override
     public double area() {
         return Math.PI * Math.pow(getRadius(), 2);
+    }
+
+    @Override
+    public double volume() {
+        return 0;
     }
 }
